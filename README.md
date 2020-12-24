@@ -39,7 +39,8 @@ This dataset consists of many files that contain information about the movies, t
 
 By merging these 2 files, we can obtain a dataframe as follows:
 
-![Dataset](/images/1.png)
+![---](/images/1.png)
+
 First 5 Rows
 
 # K-Nearest Neighbors
@@ -57,23 +58,27 @@ In the case of classification and regression, we saw that choosing the right K f
 On the user-based and item-based approaches we wrote, we calculate Mean Absolute Error (MAE) for each value of k by changing the values of k and we can try to find the optimal value of k by graphing results.
 Note: MAE can range from 0 to ∞. MAE is negatively-oriented scores: Lower values are better.
 
+
 1.	Optimal K Value for User-Based Approach:
 
-![Dataset](/images/2.png)
+![---](/images/2.png)
+
 As can be seen from the graph, we can use the value 80 for k. It’s the lowest.
+
 
 2.	Optimal K Value for Item-Based Approach:
 
-![Dataset](/images/3.png)
+![---](/images/3.png)
+
 As can be seen from the graph, we can use the value 30, 70 or 80 for k but I will use 30 because of the lower k value is better for performance.
 
 # Predicton
 
 The goal of the project was to predict the rating given to a movie by a specific user. I run my prediction algorithms, which I have written separately for item-based and user-based approaches, with optimal k values by giving movie_id and user_id values.
 
-![Dataset](/images/4.png)
+![---](/images/4.png)
 
 My user-based algorithm finds the rating predicton of movie_200 as “3” for user_1, while my item-based algorithm finds the same prediction as “4”.
 
-![Dataset](/images/5.png)
+![---](/images/5.png)
 
